@@ -1,0 +1,58 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10271f">
+    <title>Sign in | Imperial Hotel</title>
+    <link rel="stylesheet" href="{% static 'css/royal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/account.css' %}">
+  </head>
+  <body class="account-page">
+    <main class="account-layout">
+      <section class="account-story" aria-label="Welcome to Imperial Hotel">
+        <a class="account-brand" href="{% url 'index' %}" aria-label="Imperial Hotel home">
+          <span class="account-brand__seal" aria-hidden="true">IH</span>
+          <span>IMPERIAL<small>HOTEL</small></span>
+        </a>
+        <div class="account-story__copy">
+          <p class="account-eyebrow">A stay beyond the ordinary</p>
+          <h1>Welcome back<br>to a more <em>royal</em> stay.</h1>
+          <p>Sign in to continue your Imperial Hotel experience.</p>
+        </div>
+        <p class="account-story__foot">Thoughtful stays. Timeless hospitality.</p>
+      </section>
+
+      <section class="account-panel" aria-labelledby="account-title">
+        <a class="account-home-link" href="{% url 'index' %}">← Back to home</a>
+        <div class="account-form-wrap">
+          <p class="account-eyebrow">Your Imperial account</p>
+          <h2 id="account-title">Sign in</h2>
+          <p class="account-intro">Enter your details to access your account.</p>
+
+          <form method="post" action="{% url 'handlelogin' %}" class="account-form">
+            {% csrf_token %}
+            {% if form.non_field_errors %}
+              <div class="account-errors" role="alert">{{ form.non_field_errors }}</div>
+            {% endif %}
+            <div class="account-field">
+              <label for="{{ form.username.id_for_label }}">Username</label>
+              {{ form.username }}
+              {% for error in form.username.errors %}<p class="account-field__error">{{ error }}</p>{% endfor %}
+            </div>
+            <div class="account-field">
+              <label for="{{ form.password.id_for_label }}">Password</label>
+              {{ form.password }}
+              {% for error in form.password.errors %}<p class="account-field__error">{{ error }}</p>{% endfor %}
+            </div>
+            <button class="account-submit" type="submit">Sign in <span aria-hidden="true">→</span></button>
+          </form>
+
+          <p class="account-switch">New to Imperial Hotel? <a href="{% url 'handlesignup' %}">Create an account</a></p>
+        </div>
+      </section>
+    </main>
+    {% include "faq_widget.html" %}
+  </body>
+</html>

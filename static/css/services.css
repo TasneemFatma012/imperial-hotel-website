@@ -1,0 +1,305 @@
+/* .services{
+    height: 500px;
+    width: 100%;
+}
+ .services-heading h1{
+    color: #FFA01B;
+    position: absolute;
+    top: 200px; 
+    left: 250px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4.4em;
+    text-shadow: -6px 6px 0 #E8476A,
+                -9px 9px 0 purple;
+                cursor: pointer;
+   transition: 0.5s;     
+   transform-origin: bottom right;  
+   transform: scale(1);        
+ } 
+ .services-heading h1:hover{
+  transform: scale(1);
+  transition: 1s;
+} 
+.services-heading h1:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    left: -4px;
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    box-shadow: 0 5px 0 #E8476A
+                0 10 0 purple;
+    transition:transform 0.5s ease-out;            
+} 
+
+.line:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.services-review h1{
+   background-color: dimgrey;
+   width: 70%;
+   margin-top: 30px;
+   margin-left: 200px;
+   padding-top: 0px;
+   padding-left: 200px;
+   
+   color: #fff;
+}
+.services-review h1:hover{
+    transform: scale(1.2);
+}
+.services-facility{
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 50px;
+    margin: 0px auto;
+    display: flex;
+
+
+}
+.services-facility1{
+    width: 450px;
+    margin: 0 30px;
+
+}
+.img1{
+    display: block;
+    width:100% ;
+    border-radius: 40px;
+    transition: 1s;
+    filter: grayscale(100%);
+}
+.img1:hover{
+  transition: 1s;
+  filter: grayscale(0%);
+  transform: scale(0.7);
+}
+.services-facility1 h2{
+    color: blue;
+    font-size: 1.4em;
+    margin-left: 50px;
+}
+
+.services-facility-r{
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 50px;
+    margin: 0px auto;
+    display: flex;
+
+
+}
+.services-facility2{
+    width: 450px;
+    margin: 0 30px;
+
+}
+.img2{
+    display: block;
+    width:100% ;
+    border-radius: 40px;
+    transition: 1s;
+    filter: grayscale(100%);
+}
+.img2:hover{
+  transition: 1s;
+  filter: grayscale(0%);
+  transform: scale(0.7);
+  border:10px solid blue;
+}
+.services-facility2 h2{
+    color: blue;
+    font-size: 1.4em;
+    margin-left: 50px;
+}
+.facilities-list{
+    margin-left: 100px;
+    
+}
+.facilities-list h2{
+    font-size: 3.4em;
+
+}
+.facilities-list ul li{
+    font-size: 1.4em;
+} */
+nav{
+    width: 100%;
+    background-image: linear-gradient(#2C041C,#2C041C);
+    overflow: auto;
+    height: 80px ;
+    }
+    nav ul li .btn{
+    border-radius: 30px;
+    width: 10%;
+    height: 40px;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    
+    }
+    nav ul{
+    padding: 0;
+    margin: 0 0 0 100px;
+    list-style: none;
+    }
+    nav ul li{
+    float: left;
+    padding: 5 30px;
+    }
+    nav ul li a:hover{
+    color:peru;
+    text-decoration: none;
+    }
+    nav ul .active a{
+    color: peru;
+    }  
+    .logo img{
+      width: 10%;
+      height: 80px;
+      position: absolute;
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    nav ul li a{
+      width: 100%;
+      display: block;
+      padding: 15px 60px;
+      text-decoration: none;
+      font-family: 'Times New Roman', Times, serif; 
+      font-size: 25px; 
+     /* font-weight: bold;  */
+     color: #f2f2f2;
+      text-align: center;
+      margin-top: 10px;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.hold .footer .bucket .line .footer-col{
+  margin-top: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+ .footer1{
+  position:absolute;
+  top:800px;
+  background-color:#24262b;
+  height:200px;
+  width:100%;
+ }
+.bucket{
+  max-width: 1170px;
+  margin: auto;
+}
+.line{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col ul{
+  list-style: none;
+}
+    .footer{
+        background-color: #24262b;
+        padding: 60px 0;
+      }
+      .footer-col{
+        width: 25%;
+        padding: 0 15px;
+      
+      }
+      .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+        left: 40px;
+      }
+      .footer-col h4:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 70px;
+      }
+      .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+      }
+      .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        columns: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+      }
+      .footer-col li a:hover{
+        color: #ffffff;
+        padding-left: 10px;
+      }
+      .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transform: all 0.5s ease;
+      }
+      .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+      
+      } 
+      .theme-text {
+        color: #474af0;
+      }
+      
+      .card-img-top {
+        height: 200px;
+        width: 100%;
+      }
+      .card {
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+      .card:hover {
+        color: white;
+      }
+      .card::before {
+        content: "";
+        position: absolute;
+        left: -100%;
+        top: 0%;
+        background: #474af0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        z-index: -1;
+      }
+      .card:hover::before {
+        left: 0%;
+        color: white;
+      }
+      .container-fluid {
+        background-image: url("blob-scene-haikei.svg");
+        background-position: center;
+        background-size: cover;
+      }
+          

@@ -1,0 +1,121 @@
+ .i1{
+            width: 100%;
+            width: 600px;
+            position: absolute;
+            
+            /* background-image: url("{% static 'images/water.jpg' %}"); */
+        }
+        img{
+            height: 700px;
+            width: 250%;
+             opacity: 1;  
+            position: absolute;
+        }
+        .form1{
+           height: 400px;
+           width: 70%;
+           background-color: black;
+           position: absolute;
+            top: 150px;
+            left: 500px;
+            opacity: 0.9;
+            border-radius: 25px;
+            box-shadow: -5px -5px 11px #c8c2c2a2;
+        }
+        .form1 .title{
+            font-size: 32px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            color: #c9c3cd;
+            margin-top: 40px;
+        }
+        .input-form{
+            margin-top: 35px;
+            position: relative;
+        }
+        .input-form .input{
+            width: 90%;
+            padding:16px;
+            padding-left: 80px;
+            font-size: 20px;
+            text-align: center;
+             border: transparent; 
+            color:white;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius:5px ;
+            background: rgba(33, 33, 36, 0.55);
+            outline: none;
+        }
+        .input-form .bi{
+            position: absolute;
+            top: 18px;
+            left: 35px;
+            font-size: 40px;
+            color: white;
+        }
+
+        .input-form:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 100%;
+            background-color: #bfb7b7;
+
+        } 
+        .input-form:before{
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: 70px;
+            width: 2px;
+            height: 80%;
+            background-color: #d4cfd9;
+            
+        } 
+        .btn{
+          width: 30%;
+          color: white;
+          border: transparent;
+          margin-left: 100px;
+          margin-top: 30px;
+          background-color:black;
+          font-size: 1.4em;
+        }
+        .btn:hover{
+            background-color: antiquewhite;
+            color: black;
+        }
+     p{
+        color: #bfb7b7;
+        margin-left: 100px;
+        margin-top: 10px;
+     }
+     @media (max-width:900px){
+        .i1{
+            width: 100%;
+            width: 600px;
+            position: absolute;
+            
+            /* background-image: url("{% static 'images/water.jpg' %}"); */
+        }
+        img{
+            height: 700px;
+            width: 250%;
+             opacity: 1;  
+            position: absolute;
+        }
+        .form1{
+            height: 400px;
+            width: 70%;
+            background-color: black;
+            position: absolute;
+             top: 150px;
+             left: 200px;
+             opacity: 0.9;
+             border-radius: 25px;
+             box-shadow: -5px -5px 11px #c8c2c2a2;
+         }
+     }

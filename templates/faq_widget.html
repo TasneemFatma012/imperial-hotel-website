@@ -1,0 +1,30 @@
+{% load static %}
+<aside class="faq-widget" aria-label="Frequently asked questions">
+  <section class="faq-widget__panel" id="faq-widget-panel" aria-labelledby="faq-widget-title" hidden>
+    <header class="faq-widget__header">
+      <div>
+        <p>IMPERIAL HOTEL</p>
+        <h2 id="faq-widget-title">How can we help?</h2>
+      </div>
+      <button class="faq-widget__close" type="button" aria-label="Close FAQ help">×</button>
+    </header>
+    <nav class="faq-widget__links" aria-label="Quick FAQ links">
+      <a href="{% url 'faq' %}#faq-booking">Booking a room <span aria-hidden="true">→</span></a>
+      <a href="{% url 'faq' %}#faq-details">Booking details <span aria-hidden="true">→</span></a>
+      <a href="{% url 'faq' %}#faq-amenities">Room amenities <span aria-hidden="true">→</span></a>
+      <a href="{% url 'faq' %}#faq-breakfast">Breakfast <span aria-hidden="true">→</span></a>
+      <a class="faq-widget__all" href="{% url 'faq' %}">View all FAQs <span aria-hidden="true">↗</span></a>
+    </nav>
+  </section>
+  <button class="faq-widget__toggle" type="button" aria-label="Open FAQ help" aria-expanded="false" aria-controls="faq-widget-panel">
+    <svg class="faq-widget__icon faq-widget__icon--question" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 21a9 9 0 1 0-9-9 9 9 0 0 0 9 9Z"></path>
+      <path d="M9.6 9a2.5 2.5 0 1 1 4.4 1.6c-.9 1-2 1.2-2 2.8M12 17h.01"></path>
+    </svg>
+    <svg class="faq-widget__icon faq-widget__icon--close" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="m6 6 12 12M18 6 6 18"></path>
+    </svg>
+    <span>FAQ Help</span>
+  </button>
+</aside>
+<script src="{% static 'js/faq-widget.js' %}" defer></script>

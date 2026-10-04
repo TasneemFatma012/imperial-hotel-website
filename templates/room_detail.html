@@ -1,0 +1,98 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ room.name }} | Imperial Hotel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/royal.css' %}">
+  </head>
+  <body class="room-detail-body">
+    <div class="logo">
+      <a href="{% url 'index' %}" aria-label="Imperial Hotel home"><img src="{% static 'images/imerpial.png' %}" alt=""></a>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'service' %}">Services</a></li>
+        <li class="active"><a href="{% url 'room' %}">Rooms</a></li>
+        <li class="dropdown">
+          <a href="#" role="button" id="roomAccountMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account?</a>
+          <div class="dropdown-menu" aria-labelledby="roomAccountMenu">
+            <a class="dropdown-item" href="{% url 'handlelogin' %}">Login</a>
+            <a class="dropdown-item" href="{% url 'handlesignup' %}">Signup</a>
+          </div>
+        </li>
+        <li><a class="btn" href="{% url 'book' %}">BOOK NOW</a></li>
+      </ul>
+    </nav>
+
+    <main class="room-detail-page">
+      <section class="room-detail-gallery" aria-label="{{ room.name }} photos">
+        {% for image in room.images %}
+          <figure>
+            <img src="{{ image.url }}" alt="{{ image.alt }}">
+          </figure>
+        {% endfor %}
+        <div class="room-detail-gallery__caption">
+          <span>{{ room.eyebrow }}</span>
+          <h1>{{ room.name }}</h1>
+        </div>
+      </section>
+
+      <section class="room-detail-summary" aria-labelledby="room-detail-title">
+        <div class="room-detail-copy">
+          <p class="room-detail-eyebrow">A stay to remember</p>
+          <h2 id="room-detail-title">{{ room.name }}</h2>
+          <p>{{ room.description }}</p>
+          <p class="room-detail-capacity">{{ room.capacity }}</p>
+          <div class="room-detail-amenities" aria-label="Room amenities">
+            <span>Complimentary Wi-Fi</span>
+            <span>TV with Chromecast</span>
+            <span>Telephone</span>
+            <span>Tea &amp; coffee facilities</span>
+            <span>En-suite bathroom</span>
+          </div>
+        </div>
+        <aside class="room-detail-booking" aria-label="Room rate and booking">
+          <p class="room-detail-eyebrow">Your stay</p>
+          <p class="room-detail-rate"><strong>Rs 2,500</strong><span>per night</span></p>
+          <p class="room-detail-breakfast">Breakfast included</p>
+          <a class="btn btn-primary" href="{% url 'book' %}?room={{ room.key }}">Book this room</a>
+          <a class="room-detail-back" href="{% url 'room' %}">Back to all rooms</a>
+        </aside>
+      </section>
+    </main>
+
+    <div class="footer1">
+      <div class="hold">
+        <footer class="footer">
+          <div class="bucket">
+            <div class="line">
+              <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                  <li><a href="{% url 'about' %}">About us</a></li>
+                  <li><a href="{% url 'service' %}">Our services</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Get help</h4>
+                <ul><li><a href="{% url 'faq' %}">FAQ</a></li></ul>
+              </div>
+              <div class="footer-col">
+                <h4>Explore</h4>
+                <ul><li><a href="{% url 'room' %}">All rooms</a></li></ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    {% include "faq_widget.html" %}
+  </body>
+</html>

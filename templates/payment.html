@@ -1,0 +1,85 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10271f">
+    <title>{% if is_confirmed %}Booking confirmed{% else %}Secure payment{% endif %} | Imperial Hotel</title>
+    <link rel="stylesheet" href="{% static 'css/royal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/payment-checkout.css' %}">
+  </head>
+  <body class="payment-checkout-page">
+    <header class="payment-checkout-header">
+      <a href="{% url 'index' %}" class="payment-checkout-brand" aria-label="Imperial Hotel home">
+        <span class="payment-checkout-brand__seal" aria-hidden="true">IH</span>
+        <span>IMPERIAL<small>HOTEL</small></span>
+      </a>
+      <a class="payment-checkout-back" href="{% url 'book' %}">← Back to booking</a>
+    </header>
+
+    <main class="payment-checkout-main">
+      <section class="payment-checkout-card" aria-labelledby="payment-title">
+        {% if is_confirmed %}
+          <div class="payment-checkout-mark" aria-hidden="true">✓</div>
+          <p class="payment-checkout-eyebrow">Your Imperial stay</p>
+          <h1 id="payment-title">Booking confirmed</h1>
+          <p class="payment-checkout-intro">Your payment was received and your room is confirmed.</p>
+          {% for message in messages %}
+            <div class="payment-checkout-notice payment-checkout-notice--success" role="status">{{ message }}</div>
+          {% endfor %}
+          <dl class="payment-checkout-summary">
+            <div><dt>Booking reference</dt><dd>#{{ booking.pk }}</dd></div>
+            <div><dt>Room</dt><dd>{{ booking.room }} Room</dd></div>
+            <div><dt>Arrival</dt><dd>{{ booking.date|date:"M j, Y" }}</dd></div>
+            <div><dt>Checkout</dt><dd>{{ booking.checkout_date|date:"M j, Y" }}</dd></div>
+            <div><dt>Paid</dt><dd>₹{{ amount_display }}</dd></div>
+          </dl>
+          <a class="payment-checkout-button" href="{% url 'index' %}">Return to Imperial Hotel</a>
+        {% else %}
+          <div class="payment-checkout-mark" aria-hidden="true">✦</div>
+          <p class="payment-checkout-eyebrow">Protected by Razorpay</p>
+          <h1 id="payment-title">Complete your booking</h1>
+          <p class="payment-checkout-intro">Review your stay details, then continue to secure payment.</p>
+
+          {% for message in messages %}
+            <div class="payment-checkout-notice payment-checkout-notice--error" role="alert">{{ message }}</div>
+          {% endfor %}
+
+          <dl class="payment-checkout-summary">
+            <div><dt>Room</dt><dd>{{ booking.room }} Room</dd></div>
+            <div><dt>Arrival</dt><dd>{{ booking.date|date:"M j, Y" }}</dd></div>
+            <div><dt>Checkout</dt><dd>{{ booking.checkout_date|date:"M j, Y" }}</dd></div>
+            <div><dt>Number of nights</dt><dd>{{ nights }}</dd></div>
+            <div class="payment-checkout-summary__total"><dt>Total amount</dt><dd>₹{{ amount_display }}</dd></div>
+          </dl>
+
+          <form id="razorpay-verification-form" method="post" action="{% url 'verify_payment' booking.checkout_token %}">
+            {% csrf_token %}
+            <input type="hidden" name="razorpay_payment_id">
+            <input type="hidden" name="razorpay_order_id">
+            <input type="hidden" name="razorpay_signature">
+          </form>
+          <button
+            id="razorpay-pay-button"
+            class="payment-checkout-button"
+            type="button"
+            data-key="{{ razorpay_key_id }}"
+            data-order="{{ booking.payment_order_id }}"
+            data-amount="{{ booking.amount_paise }}"
+            data-name="{{ booking.fname }} {{ booking.lname }}"
+            data-email="{{ booking.email }}"
+            data-phone="{{ booking.phone }}"
+          >Pay ₹{{ amount_display }} securely</button>
+          <p class="payment-checkout-footnote">Your card and UPI details are handled securely by Razorpay.</p>
+          <div id="payment-error" class="payment-checkout-notice payment-checkout-notice--error" role="alert" hidden></div>
+        {% endif %}
+      </section>
+    </main>
+    {% if not is_confirmed %}
+      <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+      <script src="{% static 'js/razorpay-checkout.js' %}" defer></script>
+    {% endif %}
+    {% include "faq_widget.html" %}
+  </body>
+</html>

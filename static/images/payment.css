@@ -1,0 +1,45 @@
+.t1{
+    height: 50px;
+    width: 60%;
+    background-color: olive;
+    margin-left: 50px;
+}
+.t2{
+    height: 1700px;
+    width: 60%;
+    background-color:aliceblue;
+    margin-left: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+input{
+    width: 50%;
+    height: 50px;
+}
+.t3{
+    height: 50px;
+    width: 70%;
+    background-color:lightgrey;
+}
+.c1{
+    height: 30px;
+    width: 40%;
+    margin-left: 300px;
+
+}
+.t4{
+    height: 620px;
+    width: 70%;
+    background-color: lightgrey;
+}
+.btn btn-dark{
+      position: absolute;
+      top: 40px;
+}
+.t5{
+    height: 500px;
+    width: 60%;
+    background-color: lightgray;
+    margin-left: 50px;
+    
+}

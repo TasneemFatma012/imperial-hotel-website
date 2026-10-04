@@ -1,0 +1,110 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10271f">
+    <title>Frequently Asked Questions | Imperial Hotel</title>
+    <link rel="stylesheet" href="{% static 'css/royal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/faq.css' %}">
+  </head>
+  <body class="faq-page">
+    <div class="logo">
+      <a href="{% url 'index' %}" aria-label="Imperial Hotel home"><img src="{% static 'images/imerpial.png' %}" alt=""></a>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+        <li><a href="{% url 'service' %}">Services</a></li>
+        <li><a href="{% url 'room' %}">Rooms</a></li>
+        <li class="dropdown">
+          <a href="#" role="button" id="faqAccountMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account?</a>
+          <div class="dropdown-menu" aria-labelledby="faqAccountMenu">
+            <a class="dropdown-item" href="{% url 'handlelogin' %}">Login</a>
+            <a class="dropdown-item" href="{% url 'handlesignup' %}">Sign up</a>
+          </div>
+        </li>
+        <li><a class="btn" href="{% url 'book' %}">BOOK NOW</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="faq-hero" aria-labelledby="faq-title">
+        <div class="faq-hero__content">
+          <p class="faq-eyebrow">Imperial Hotel · Guest help</p>
+          <h1 id="faq-title">Frequently asked<br><em>questions</em></h1>
+          <p>Helpful answers for planning a comfortable stay with us.</p>
+          <a class="faq-hero__link" href="#faq-list">Find an answer <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="faq-content" id="faq-list" aria-labelledby="faq-list-title">
+        <div class="faq-content__heading">
+          <p class="faq-eyebrow">Here to make it easy</p>
+          <h2 id="faq-list-title">How can we help?</h2>
+          <p>Browse the topics below, or <a href="{% url 'contact' %}">contact our team</a> if you need a hand.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" id="faq-booking">
+            <summary><span class="faq-item__number">01</span><span>How do I book a room?</span><span class="faq-item__icon" aria-hidden="true"></span></summary>
+            <div class="faq-item__answer">
+              <p>Choose <a href="{% url 'room' %}">Rooms</a> to compare the Standard, Deluxe and Imperial options, then select “Book this room”. You can also start with <a href="{% url 'book' %}">Book now</a> and choose a room in the form.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" id="faq-details">
+            <summary><span class="faq-item__number">02</span><span>What details do I need to complete a booking?</span><span class="faq-item__icon" aria-hidden="true"></span></summary>
+            <div class="faq-item__answer">
+              <p>The booking form asks for your name, phone number, email address, room choice, arrival date and checkout date. Your room is held briefly while you complete secure payment through Razorpay.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" id="faq-amenities">
+            <summary><span class="faq-item__number">03</span><span>What amenities are available in the rooms?</span><span class="faq-item__icon" aria-hidden="true"></span></summary>
+            <div class="faq-item__answer">
+              <p>Room details include complimentary Wi-Fi, a TV with Chromecast, telephone, tea and coffee facilities, and an en-suite bathroom. Visit the <a href="{% url 'room' %}">room details</a> for more information about each room.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" id="faq-breakfast">
+            <summary><span class="faq-item__number">04</span><span>Is breakfast included?</span><span class="faq-item__icon" aria-hidden="true"></span></summary>
+            <div class="faq-item__answer">
+              <p>Breakfast is included with the room rates shown on our room detail pages. Please check your selected room details when planning your stay.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" id="faq-contact">
+            <summary><span class="faq-item__number">05</span><span>How can I ask a question about my stay?</span><span class="faq-item__icon" aria-hidden="true"></span></summary>
+            <div class="faq-item__answer">
+              <p>Send a message through our <a href="{% url 'contact' %}">Contact page</a> and our team will get back to you.</p>
+            </div>
+          </details>
+        </div>
+
+        <aside class="faq-contact">
+          <div>
+            <p class="faq-eyebrow">Still need help?</p>
+            <h2>We’re happy to help you plan.</h2>
+          </div>
+          <a href="{% url 'contact' %}">Contact us <span aria-hidden="true">→</span></a>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="faq-footer">
+      <a class="faq-footer__brand" href="{% url 'index' %}">IMPERIAL HOTEL</a>
+      <p>Thoughtful stays. Timeless hospitality.</p>
+      <div>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'service' %}">Services</a>
+        <a href="{% url 'room' %}">Rooms</a>
+        <a href="{% url 'contact' %}">Contact</a>
+      </div>
+    </footer>
+    {% include "faq_widget.html" %}
+  </body>
+</html>

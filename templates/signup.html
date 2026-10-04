@@ -1,0 +1,56 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10271f">
+    <title>Create an account | Imperial Hotel</title>
+    <link rel="stylesheet" href="{% static 'css/royal.css' %}">
+    <link rel="stylesheet" href="{% static 'css/account.css' %}">
+  </head>
+  <body class="account-page">
+    <main class="account-layout account-layout--signup">
+      <section class="account-story" aria-label="Join Imperial Hotel">
+        <a class="account-brand" href="{% url 'index' %}" aria-label="Imperial Hotel home">
+          <span class="account-brand__seal" aria-hidden="true">IH</span>
+          <span>IMPERIAL<small>HOTEL</small></span>
+        </a>
+        <div class="account-story__copy">
+          <p class="account-eyebrow">Make yourself at home</p>
+          <h1>Your next<br>memorable stay<br><em>starts here.</em></h1>
+          <p>Create your account and discover considered comfort at Imperial Hotel.</p>
+        </div>
+        <p class="account-story__foot">Thoughtful stays. Timeless hospitality.</p>
+      </section>
+
+      <section class="account-panel" aria-labelledby="account-title">
+        <a class="account-home-link" href="{% url 'index' %}">← Back to home</a>
+        <div class="account-form-wrap">
+          <p class="account-eyebrow">Become our guest</p>
+          <h2 id="account-title">Create account</h2>
+          <p class="account-intro">Join us for a more personal hotel experience.</p>
+
+          <form method="post" action="{% url 'handlesignup' %}" class="account-form">
+            {% csrf_token %}
+            {% if form.non_field_errors %}
+              <div class="account-errors" role="alert">{{ form.non_field_errors }}</div>
+            {% endif %}
+            {% for field in form %}
+              <div class="account-field">
+                <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                {{ field }}
+                {% if field.help_text %}<p class="account-field__help">{{ field.help_text|safe }}</p>{% endif %}
+                {% for error in field.errors %}<p class="account-field__error">{{ error }}</p>{% endfor %}
+              </div>
+            {% endfor %}
+            <button class="account-submit" type="submit">Create account <span aria-hidden="true">→</span></button>
+          </form>
+
+          <p class="account-switch">Already have an account? <a href="{% url 'handlelogin' %}">Sign in</a></p>
+        </div>
+      </section>
+    </main>
+    {% include "faq_widget.html" %}
+  </body>
+</html>
