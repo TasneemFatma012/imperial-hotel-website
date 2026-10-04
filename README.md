@@ -9,7 +9,7 @@ accounts, contact and FAQ pages, date-based room booking, and Razorpay checkout.
 - Django 4.2
 - Razorpay test API credentials to try the online checkout
 
-The project currently uses SQLite, so no separate database server is needed.
+Local development uses SQLite, so no separate database server is needed.
 
 ## Run locally on Windows
 
@@ -114,3 +114,24 @@ Generate a secure key with:
 ```powershell
 python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 ```
+
+## Deploy a free demo on Render
+
+The repository includes a `render.yaml` Blueprint for a free web service. To
+deploy it:
+
+1. Push this project to a GitHub repository.
+2. In Render, choose **New** → **Blueprint**, connect the GitHub repository,
+   and approve the `imperial-hotel-website` web service.
+3. Wait for the build and deployment to finish, then open the `onrender.com`
+   URL shown in the Render dashboard.
+
+The Blueprint generates a private `DJANGO_SECRET_KEY`, disables debug mode,
+collects static files, and applies migrations when the service starts. The
+free demo uses SQLite on Render's temporary filesystem: the site may sleep
+when idle, and database contents can be lost on redeploy or restart. **Do not
+use this free configuration for real reservations or payments.** For live
+guest data, configure a persistent PostgreSQL database and set `DATABASE_URL`
+in Render. Add `RAZORPAY_KEY_ID` and `RAZORPAY_KEY_SECRET` as protected
+environment variables in the Render dashboard only when ready to test/live
+payments; never add them to GitHub.
