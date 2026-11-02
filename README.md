@@ -17,7 +17,11 @@ accounts, contact and FAQ pages, date-based room booking, and Razorpay checkout.
 
 <p align="center">
   <img src="static/images/Screenshot%202026-11-02%20211226.png" alt="Imperial Hotel account login screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
-  
+  <img src="static/images/Screenshot%202026-11-02%20211500.png" alt="Imperial Hotel login screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
+  <img src="static/images/Screenshot%202026-11-02%20211535.png" alt="Imperial Hotel room details screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
+</p>
+
+<p align="center">
   <img src="static/images/Screenshot%202026-11-02%20211422.png" alt="Imperial Hotel extra page screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
 </p>
 
