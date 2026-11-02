@@ -3,6 +3,22 @@
 A Django hotel website with a royal-inspired design, room information, guest
 accounts, contact and FAQ pages, date-based room booking, and Razorpay checkout.
 
+## Screenshots
+
+<p align="center">
+  <img src="static/images/hotel.jpg" alt="Imperial Hotel exterior" width="800" />
+</p>
+
+<p align="center">
+  <img src="static/images/lobby.jpg" alt="Hotel lobby" width="390" />
+  <img src="static/images/room-1.jpg" alt="Luxury room" width="390" />
+</p>
+
+<p align="center">
+  <img src="static/images/swim.jpg" alt="Swimming pool and spa" width="390" />
+  <img src="static/images/services.jpg" alt="Hotel services" width="390" />
+</p>
+
 ## Requirements
 
 - Python 3.11
