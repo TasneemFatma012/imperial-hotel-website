@@ -5,18 +5,29 @@ accounts, contact and FAQ pages, date-based room booking, and Razorpay checkout.
 
 ## Screenshots
 
+### Home page
+
 <p align="center">
-  <img src="static/images/hotel.jpg" alt="Imperial Hotel exterior" width="800" />
+  <img src="static/images/homepage-screenshot.png" alt="Imperial Hotel home page" width="900" />
+</p>
+
+### Rooms and services
+
+<p align="center">
+  <img src="static/images/rooms-screenshot.png" alt="Rooms page" width="430" />
+  <img src="static/images/services-screenshot.png" alt="Services page" width="430" />
+</p>
+
+### Booking and account
+
+<p align="center">
+  <img src="static/images/booking-screenshot.png" alt="Booking page" width="430" />
+  <img src="static/images/account-login-screenshot.png" alt="Account login page" width="430" />
 </p>
 
 <p align="center">
-  <img src="static/images/lobby.jpg" alt="Hotel lobby" width="390" />
-  <img src="static/images/room-1.jpg" alt="Luxury room" width="390" />
-</p>
-
-<p align="center">
-  <img src="static/images/swim.jpg" alt="Swimming pool and spa" width="390" />
-  <img src="static/images/services.jpg" alt="Hotel services" width="390" />
+  <img src="static/images/account-signup-screenshot.png" alt="Account signup page" width="430" />
+  <img src="static/images/hotel.jpg" alt="Imperial Hotel exterior" width="430" />
 </p>
 
 ## Requirements
