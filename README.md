@@ -5,25 +5,25 @@ accounts, contact and FAQ pages, date-based room booking, and Razorpay checkout.
 
 ## Screenshots
 
-<div align="center">
-  <img src="static/images/Screenshot%202026-11-02%20211834.png" alt="Imperial Hotel homepage screenshot" width="1000" style="border-radius: 18px; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18); border: 1px solid #d9d9d9;" />
+<div align="center" style="padding: 10px 0 18px 0;">
+  <img src="static/images/Screenshot%202026-11-02%20211834.png" alt="Imperial Hotel homepage screenshot" width="1000" style="border-radius: 22px; box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18); border: 1px solid #e5e7eb; background: #ffffff; padding: 6px;" />
 </div>
 
-<p align="center">
-  <img src="static/images/Screenshot%202026-11-02%20211757.png" alt="Imperial Hotel rooms screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
-  <img src="static/images/Screenshot%202026-11-02%20211652.png" alt="Imperial Hotel services screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
-  <img src="static/images/Screenshot%202026-11-02%20211132.png" alt="Imperial Hotel booking screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
-</p>
+<div align="center" style="display: block; margin: 0 auto;">
+  <img src="static/images/Screenshot%202026-11-02%20211757.png" alt="Imperial Hotel rooms screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
+  <img src="static/images/Screenshot%202026-11-02%20211652.png" alt="Imperial Hotel services screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
+  <img src="static/images/Screenshot%202026-11-02%20211132.png" alt="Imperial Hotel booking screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
+</div>
 
-<p align="center">
-  <img src="static/images/Screenshot%202026-11-02%20211226.png" alt="Imperial Hotel account login screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
-  <img src="static/images/Screenshot%202026-11-02%20211500.png" alt="Imperial Hotel login screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
-  <img src="static/images/Screenshot%202026-11-02%20211535.png" alt="Imperial Hotel room details screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
-</p>
+<div align="center" style="display: block; margin: 0 auto;">
+  <img src="static/images/Screenshot%202026-11-02%20211226.png" alt="Imperial Hotel account login screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
+  <img src="static/images/Screenshot%202026-11-02%20211500.png" alt="Imperial Hotel login screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
+  <img src="static/images/Screenshot%202026-11-02%20211535.png" alt="Imperial Hotel room details screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
+</div>
 
-<p align="center">
-  <img src="static/images/Screenshot%202026-11-02%20211422.png" alt="Imperial Hotel extra page screenshot" width="310" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
-</p>
+<div align="center" style="padding-top: 8px;">
+  <img src="static/images/Screenshot%202026-11-02%20211422.png" alt="Imperial Hotel extra page screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
+</div>
 
 ## Requirements
 
