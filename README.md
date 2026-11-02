@@ -5,29 +5,23 @@ accounts, contact and FAQ pages, date-based room booking, and Razorpay checkout.
 
 ## Screenshots
 
-### Home page
+<div align="center">
+  <img src="static/images/homepage-screenshot.png" alt="Imperial Hotel home page" width="1000" style="border-radius: 18px; box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18); border: 1px solid #d9d9d9;" />
+</div>
 
 <p align="center">
-  <img src="static/images/homepage-screenshot.png" alt="Imperial Hotel home page" width="900" />
-</p>
-
-### Rooms and services
-
-<p align="center">
-  <img src="static/images/rooms-screenshot.png" alt="Rooms page" width="430" />
-  <img src="static/images/services-screenshot.png" alt="Services page" width="430" />
-</p>
-
-### Booking and account
-
-<p align="center">
-  <img src="static/images/booking-screenshot.png" alt="Booking page" width="430" />
-  <img src="static/images/account-login-screenshot.png" alt="Account login page" width="430" />
+  <img src="static/images/rooms-screenshot.png" alt="Rooms page" width="480" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
+  <img src="static/images/services-screenshot.png" alt="Services page" width="480" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
 </p>
 
 <p align="center">
-  <img src="static/images/account-signup-screenshot.png" alt="Account signup page" width="430" />
-  <img src="static/images/hotel.jpg" alt="Imperial Hotel exterior" width="430" />
+  <img src="static/images/booking-screenshot.png" alt="Booking page" width="480" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
+  <img src="static/images/account-login-screenshot.png" alt="Account login page" width="480" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
+</p>
+
+<p align="center">
+  <img src="static/images/account-signup-screenshot.png" alt="Account signup page" width="480" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
+  <img src="static/images/hotel.jpg" alt="Imperial Hotel exterior" width="480" style="border-radius: 16px; box-shadow: 0 10px 22px rgba(15, 23, 42, 0.14); border: 1px solid #d9d9d9; margin: 10px;" />
 </p>
 
 ## Requirements
