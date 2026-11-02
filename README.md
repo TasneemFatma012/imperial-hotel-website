@@ -3,27 +3,27 @@
 A Django hotel website with a royal-inspired design, room information, guest
 accounts, contact and FAQ pages, date-based room booking, and Razorpay checkout.
 
-## Screenshots
+## Project Preview
 
 <div align="center" style="padding: 10px 0 18px 0;">
   <img src="static/images/Screenshot%202026-11-02%20211834.png" alt="Imperial Hotel homepage screenshot" width="1000" style="border-radius: 22px; box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18); border: 1px solid #e5e7eb; background: #ffffff; padding: 6px;" />
 </div>
 
-<div align="center" style="display: block; margin: 0 auto;">
+<p align="center">
   <img src="static/images/Screenshot%202026-11-02%20211757.png" alt="Imperial Hotel rooms screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
   <img src="static/images/Screenshot%202026-11-02%20211652.png" alt="Imperial Hotel services screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
   <img src="static/images/Screenshot%202026-11-02%20211132.png" alt="Imperial Hotel booking screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
-</div>
+</p>
 
-<div align="center" style="display: block; margin: 0 auto;">
+<p align="center">
   <img src="static/images/Screenshot%202026-11-02%20211226.png" alt="Imperial Hotel account login screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
   <img src="static/images/Screenshot%202026-11-02%20211500.png" alt="Imperial Hotel login screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
   <img src="static/images/Screenshot%202026-11-02%20211535.png" alt="Imperial Hotel room details screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
-</div>
+</p>
 
-<div align="center" style="padding-top: 8px;">
+<p align="center">
   <img src="static/images/Screenshot%202026-11-02%20211422.png" alt="Imperial Hotel extra page screenshot" width="300" style="border-radius: 16px; box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12); border: 1px solid #e5e7eb; margin: 10px; background: #ffffff; padding: 4px;" />
-</div>
+</p>
 
 ## Requirements
 
